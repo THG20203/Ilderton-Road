@@ -1,0 +1,31 @@
+:root {
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px, 10px/16px = 62.5% */
+}
+
+body {
+  font-family: var(--oswald-font);
+  background-color: red;
+  color: blue;
+  line-height: 1.6;
+}
+
+.ilderton-road--header {
+  font-family: "Oswald", sans-serif;
+}
