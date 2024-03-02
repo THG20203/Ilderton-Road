@@ -26,3 +26,9 @@ body {
   color: blue;
   line-height: 1.6;
 }
+
+input,
+textarea {
+  font-family: var(--oswald-font);
+  line-height: 1.6;
+}
