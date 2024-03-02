@@ -1,4 +1,5 @@
 :root {
+  --oswald-font: "Oswald", sans-serif;
 }
 
 * {
@@ -24,8 +25,4 @@ body {
   background-color: red;
   color: blue;
   line-height: 1.6;
-}
-
-.ilderton-road--header {
-  font-family: "Oswald", sans-serif;
 }
