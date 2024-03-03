@@ -1,5 +1,6 @@
 :root {
   --oswald-font: "Oswald", sans-serif;
+  --millwall-blue: #00194a;
 }
 
 * {
@@ -22,13 +23,22 @@ html {
 
 body {
   font-family: var(--oswald-font);
-  background-color: red;
-  color: blue;
-  line-height: 1.6;
+  color: var(--millwall-blue);
+  min-height: 100vh;
 }
 
 input,
 textarea {
   font-family: var(--oswald-font);
+  line-height: 1.6;
+}
+
+.heading-1 {
+  font-size: 7rem;
+  line-height: 1.1;
+}
+
+.paragraph-text {
+  font-size: 2.5rem;
   line-height: 1.6;
 }
