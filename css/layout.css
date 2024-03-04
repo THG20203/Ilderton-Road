@@ -18,5 +18,12 @@ html {
 
 body {
   font-family: var(--oswald-font);
-  color: var(--millwall-blue);
+  background-color: var(--millwall-blue);
+  color: var(--font-white);
+}
+
+.home-container {
+  display: grid;
+  grid-template-rows: 100vh;
+  /* grid-template-columns: ; */
 }
