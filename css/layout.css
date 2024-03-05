@@ -24,7 +24,7 @@ body {
 
 .home-container {
   display: grid;
-  grid-template-rows: 180vh 100vh;
+  grid-template-rows: 100rem 100vh;
   grid-template-columns:
     [full-start] 15vw [content-start] minmax(4rem, 1fr) [center-start] repeat(
       8,
@@ -44,7 +44,7 @@ body {
   position: sticky;
   top: 0px;
   width: 100%;
-  height: 100vh;
+  height: 800px;
   overflow: hidden;
 }
 .zampa-background {
@@ -52,7 +52,7 @@ body {
   top: 0px;
   z-index: 1;
   width: 100%;
-  height: 90vh;
+  height: 50rem;
   /* initial transform properties */
   transform: scale3d(1, 1, 1);
   background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9)),
@@ -64,12 +64,12 @@ body {
 
 .stadium-background {
   width: 100%;
-  height: 90vh;
+  height: 50rem;
   /* initial transform properties */
   transform: scale3d(1, 1, 1);
   background-image: url("../img/stadium-drawing.png");
   background-position: 50% 50%;
-  background-size: 70%;
+  background-size: 40rem;
   background-repeat: no-repeat;
 }
 
