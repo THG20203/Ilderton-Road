@@ -1,11 +1,21 @@
 let zampaBackground = document.querySelector(".zampa-background");
 let stadiumDrawing = document.querySelector(".stadium-background");
-let ildertonRoad = document.querySelector(".ilderton-road");
 
 window.addEventListener("scroll", () => {
   const zampaScrollPosition = window.scrollY;
   const zampaScale = 1 + zampaScrollPosition / 600;
   zampaBackground.style.transform = `scale3d(${zampaScale}, ${zampaScale}, 1)`;
+
+  // Check if the scale of zampaBackground reaches 2
+  if (zampaScale >= 2) {
+    // Set opacity to 0 for both zampaBackground and stadiumDrawing
+    zampaBackground.style.opacity = 0;
+    stadiumDrawing.style.opacity = 0;
+  } else {
+    // Reset opacity if zampaScale is less than 2
+    zampaBackground.style.opacity = 1;
+    stadiumDrawing.style.opacity = 1;
+  }
 
   const stadiumScrollPosition = window.scrollY;
   const scale = 1 + stadiumScrollPosition / 1000;
