@@ -4,8 +4,8 @@
   display: grid;
   background-color: var(--background-black);
   grid-column: full-start / full-end;
-  margin: 0 1rem;
-  @media screen and (min-height: 500px) {
+  margin: 0 0.5rem;
+  @media screen and (min-width: 500px) {
     grid-column: content-start / content-end;
     margin: 0;
   }
@@ -54,6 +54,7 @@
   display: grid;
   grid-template-columns: [par-title-start] min-content [par-title-end] 1fr [par-mouse-start] min-content [par-mouse-end];
   grid-template-rows: 1fr;
+  place-items: center;
 }
 
 .parallax-title {
@@ -62,14 +63,20 @@
 
 .parallax-mouse {
   grid-column: par-mouse-start / par-mouse-end;
-  width: 2rem;
-  height: 2rem;
+  width: 10rem;
+  height: 12rem;
+  border-radius: 10px;
   border: white solid 2px;
+  @media screen and (min-width: 500px) {
+    width: 15rem;
+    height: 20rem;
+    border-radius: 20px;
+  }
 }
 
 .ilderton-road {
   grid-column: content-start / content-end;
-  grid-row: 2 /3;
+  grid-row: 2 / 3;
   width: 100%;
   height: auto; /* Allow the image to scale proportionally */
 }
