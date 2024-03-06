@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: var(--oswald-font);
-  background-color: var(--millwall-blue);
+  background-color: var(--background-black);
   color: var(--font-white);
 }
 

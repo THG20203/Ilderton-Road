@@ -1,8 +1,7 @@
 .parralax-container {
   position: relative;
   display: grid;
-  grid-row: 1 /2;
-  background-color: var(--millwall-blue);
+  background-color: var(--background-black);
   grid-column: content-start / content-end;
 }
 
@@ -12,6 +11,7 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  display: grid;
 }
 .zampa-background {
   position: absolute;
@@ -38,15 +38,14 @@
   background-repeat: no-repeat;
 }
 .parallax-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: grid;
+  align-self: start;
+  justify-self: left;
   z-index: 2;
 }
 .ilderton-road {
-  grid-row: 2 / 3;
   grid-column: content-start / content-end;
+  grid-row: 2 /3;
   width: 100%;
   height: auto; /* Allow the image to scale proportionally */
 }
