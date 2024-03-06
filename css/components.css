@@ -3,7 +3,12 @@
   position: relative;
   display: grid;
   background-color: var(--background-black);
-  grid-column: content-start / content-end;
+  grid-column: full-start / full-end;
+  margin: 0 1rem;
+  @media screen and (min-height: 500px) {
+    grid-column: content-start / content-end;
+    margin: 0;
+  }
 }
 
 .parallax-sticky {
@@ -13,9 +18,11 @@
   height: 100vh;
   overflow: hidden;
   display: grid;
+  grid-template-rows: 70vh 30vh;
 }
 
 .zampa-background {
+  grid-row: 1 /2;
   position: absolute;
   top: 0px;
   z-index: 1;
@@ -29,7 +36,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .stadium-background {
+  grid-row: 1 /2;
   width: 100%;
   height: 70vh;
   /* initial transform properties */
@@ -39,11 +48,23 @@
   background-size: 80vh;
   background-repeat: no-repeat;
 }
-.parallax-title {
+
+.parallax-text {
+  grid-row: 2 /3;
   display: grid;
-  align-self: start;
-  justify-self: left;
-  z-index: 2;
+  grid-template-columns: [par-title-start] min-content [par-title-end] 1fr [par-mouse-start] min-content [par-mouse-end];
+  grid-template-rows: 1fr;
+}
+
+.parallax-title {
+  grid-column: par-title-start / par-title-end;
+}
+
+.parallax-mouse {
+  grid-column: par-mouse-start / par-mouse-end;
+  width: 2rem;
+  height: 2rem;
+  border: white solid 2px;
 }
 
 .ilderton-road {
