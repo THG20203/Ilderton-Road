@@ -13,7 +13,7 @@ window.addEventListener("scroll", () => {
   // PARALLAX FUNCTIONS
   const calculateScale = (scrollPosition, divisionFactor) => {
     /* 1 + to make sure it doesn't go to 0 or negative and flip it */
-    /* divisianFactor is arbitary number for scaling, lower number dividing by faster scaling */
+    /* divisianFactor is arbitary number for scaling, lower number dividing by = faster scaling */
     return 1 + scrollPosition / divisionFactor;
   };
 
@@ -46,10 +46,11 @@ window.addEventListener("load", () => {
 /* MOUSE SCROLL ANIMATION */
 const mouseMoveUpDown = () => {
   /* parseFloat converts string to a floating point number */
+  /* Why? getComputedStyle.top returns top CSS as a string. */
   const mouseScrollCurrentPosition = parseFloat(
     getComputedStyle(mouseSlider).top
   );
-  /* if current position top: -10px change to 10px then back if flase */
+  /* if current position top: -10px change to 10px then back if false */
   const mouseScrollNewPosition = mouseScrollCurrentPosition === -10 ? 10 : -10;
   mouseSlider.style.top = `${mouseScrollNewPosition}px`;
 };
