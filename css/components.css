@@ -1,11 +1,12 @@
-.parralax-container {
+/* parallax components styles */
+.parallax-container {
   position: relative;
   display: grid;
   background-color: var(--background-black);
   grid-column: content-start / content-end;
 }
 
-.parralax-sticky {
+.parallax-sticky {
   position: sticky;
   top: 0px;
   width: 100%;
@@ -13,6 +14,7 @@
   overflow: hidden;
   display: grid;
 }
+
 .zampa-background {
   position: absolute;
   top: 0px;
@@ -43,6 +45,7 @@
   justify-self: left;
   z-index: 2;
 }
+
 .ilderton-road {
   grid-column: content-start / content-end;
   grid-row: 2 /3;
