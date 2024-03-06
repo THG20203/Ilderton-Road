@@ -67,11 +67,23 @@
   height: 12rem;
   border-radius: 10px;
   border: white solid 2px;
+  position: relative;
   @media screen and (min-width: 500px) {
-    width: 15rem;
-    height: 20rem;
-    border-radius: 20px;
+    width: 10rem;
+    height: 15rem;
+    border-radius: 25px;
   }
+}
+
+.parallax-mouse::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 20%;
+  background-color: white;
 }
 
 .ilderton-road {
