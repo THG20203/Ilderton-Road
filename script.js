@@ -1,9 +1,10 @@
 // ELEMENTS
 const zampaBackground = document.querySelector(".zampa-background");
 const stadiumDrawing = document.querySelector(".stadium-background");
+const parallaxTitle = document.querySelector(".parallax-title");
 const mouseSlider = document.querySelector(".parallax-mouse__slider");
 
-//PARALLAX CODE
+/* PARALLAX CODE */
 window.addEventListener("scroll", () => {
   //PARALLAX VARIABLES
   const zampaScrollPosition = window.scrollY;
@@ -35,11 +36,20 @@ window.addEventListener("scroll", () => {
   applyOpacity(stadiumDrawing, stadiumScale);
 });
 
+/* PARALLAX TITLE FADE IN ANIMATION */
+window.addEventListener("load", () => {
+  parallaxTitle.style.transition = "opacity 2s ease-in";
+  /* no need for conditional, load event has either happened or not */
+  parallaxTitle.style.opacity = 1;
+});
+
+/* MOUSE SCROLL ANIMATION */
 const mouseMoveUpDown = () => {
   /* parseFloat converts string to a floating point number */
   const mouseScrollCurrentPosition = parseFloat(
     getComputedStyle(mouseSlider).top
   );
+  /* if current position top: -10px change to 10px then back if flase */
   const mouseScrollNewPosition = mouseScrollCurrentPosition === -10 ? 10 : -10;
   mouseSlider.style.top = `${mouseScrollNewPosition}px`;
 };
