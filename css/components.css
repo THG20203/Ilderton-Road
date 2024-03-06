@@ -75,15 +75,15 @@
   }
 }
 
-.parallax-mouse::before {
-  content: "";
+.parallax-mouse__slider {
   position: absolute;
-  top: -10%;
+  top: -10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 2px;
+  width: 4px;
   height: 20%;
   background-color: white;
+  transition: top 0.5s ease;
 }
 
 .ilderton-road {

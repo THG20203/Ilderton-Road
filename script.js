@@ -1,5 +1,7 @@
-let zampaBackground = document.querySelector(".zampa-background");
-let stadiumDrawing = document.querySelector(".stadium-background");
+// ELEMENTS
+const zampaBackground = document.querySelector(".zampa-background");
+const stadiumDrawing = document.querySelector(".stadium-background");
+const mouseSlider = document.querySelector(".parallax-mouse__slider");
 
 //PARALLAX CODE
 window.addEventListener("scroll", () => {
@@ -32,3 +34,15 @@ window.addEventListener("scroll", () => {
   applyTransform(stadiumDrawing, stadiumScale);
   applyOpacity(stadiumDrawing, stadiumScale);
 });
+
+const mouseMoveUpDown = () => {
+  /* parseFloat converts string to a floating point number */
+  const mouseScrollCurrentPosition = parseFloat(
+    getComputedStyle(mouseSlider).top
+  );
+  const mouseScrollNewPosition = mouseScrollCurrentPosition === -10 ? 10 : -10;
+  mouseSlider.style.top = `${mouseScrollNewPosition}px`;
+};
+
+/* call moveUpDown function 400 miliseconds */
+setInterval(mouseMoveUpDown, 400);
