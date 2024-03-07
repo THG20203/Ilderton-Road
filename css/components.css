@@ -18,7 +18,7 @@
   height: 100vh;
   overflow: hidden;
   display: grid;
-  grid-template-rows: 70vh 30vh;
+  grid-template-rows: 70vh min-max(30vh, min-content);
 }
 
 .zampa-background {
