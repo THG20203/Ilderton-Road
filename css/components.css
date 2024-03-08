@@ -69,47 +69,46 @@
   border: white solid 2px;
   position: relative;
   z-index: 3;
-  width: 7.5rem;
-  height: 7.5rem;
+  width: 6.5rem; /* Adjusted width */
+  height: 7.5rem; /* Adjusted height */
   border-radius: 16px;
 
   @media (min-width: 321px) and (max-width: 360px) {
-    width: 8.125rem;
-    height: 8.125rem;
+    width: 7.5rem;
+    height: 8.5rem; /* Adjusted height */
     border-radius: 17.25px;
   }
 
   @media (min-width: 361px) and (max-width: 375px) {
-    width: 8.75rem;
-    height: 8.75rem;
+    width: 8rem;
+    height: 9rem; /* Adjusted height */
     border-radius: 18.5px;
   }
 
   @media (min-width: 376px) and (max-width: 414px) {
-    width: 9.375rem;
-    height: 9.375rem;
+    width: 8.5rem;
+    height: 9.5rem; /* Adjusted height */
     border-radius: 19.75px;
   }
 
   @media (min-width: 415px) and (max-width: 768px) {
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 10rem; /* Adjusted height */
     border-radius: 20px;
   }
 
   @media (min-width: 769px) and (max-width: 1024px) {
-    width: 10.625rem;
-    height: 10.625rem;
+    width: 9.5rem;
+    height: 10.5rem; /* Adjusted height */
     border-radius: 21.25px;
   }
 
   @media (min-width: 1025px) {
-    width: 11.25rem;
-    height: 11.25rem;
+    width: 10rem;
+    height: 11rem; /* Adjusted height */
     border-radius: 22.5px;
   }
 }
-
 .parallax-mouse__slider {
   position: absolute;
   top: -10px;
