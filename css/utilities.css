@@ -1,18 +1,5 @@
-/* PHONE */
-/* 320px */
-/* 360x */
-/* 375px */
-/* 414px */
+@media only screen and (min-width: 0rem) {
+  /* clamp(min-value, preferred valued, max value) */
+}
 
-/* TABLETS */
-/* 768px */
-/* 834px */
-/* 1024px */
-
-/* LAPTOPS / DESKTOP */
-/* 1366px */
-/* 1920px */
-
-/* LARGE SCREENS */
-/* 2560px */
-/* 3440px */
+/* use rem */
