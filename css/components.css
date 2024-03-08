@@ -4,17 +4,16 @@
   display: grid;
   background-color: var(--background-black);
   grid-column: full-start / full-end;
-  margin: 0 0.5rem;
+  width: 100%;
 }
 
 .parallax-sticky {
   position: sticky;
   top: 0px;
   width: 100%;
-  height: 100vh;
   overflow: hidden;
   display: grid;
-  grid-template-rows: 60vh 30vh;
+  grid-template-rows: 50vh 20vh;
 }
 
 .zampa-background {
@@ -23,26 +22,26 @@
   top: 0px;
   z-index: 1;
   width: 100%;
+  height: 50vh;
   /* initial transform properties */
   transform: scale3d(1, 1, 1);
   background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9)),
-    url("../img/zampa-road.png");
+    url("../img/zampa-road-mobile.png");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 60vh;
 }
 
 .stadium-background {
   grid-row: 1 /2;
   width: 100%;
-  height: 60vh;
   /* initial transform properties */
   transform: scale3d(1, 1, 1);
   background-image: url("../img/stadium-drawing.png");
   background-position: 50% 50%;
-  background-size: 70vh;
   background-repeat: no-repeat;
+  height: 50vh;
+  background-size: 25rem;
 }
 
 .parallax-text {
@@ -51,6 +50,7 @@
   grid-template-columns: [par-title-start] min-content [par-title-end] 1fr [par-mouse-start] min-content [par-mouse-end];
   grid-template-rows: 1fr;
   place-items: center;
+  margin: 0 0.5rem;
 }
 
 .parallax-title {

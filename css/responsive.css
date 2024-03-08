@@ -1,0 +1,38 @@
+@media only screen and (min-width: 20rem) {
+  .stadium-background {
+    background-size: clamp(30rem, calc(40vw + 10px), 50rem);
+  }
+}
+@media only screen and (min-width: 27rem) {
+  .parallax-sticky {
+    grid-template-rows: 70vh 30vh;
+  }
+  .zampa-background {
+    height: 70vh;
+  }
+  .stadium-background {
+    height: 70vh;
+    background-size: clamp(55rem, calc(45vw + 10px), 65rem);
+  }
+}
+
+/* 760px ish */
+@media only screen and (min-width: 50rem) {
+  .stadium-background {
+    background-size: clamp(65rem, calc(50vw + 10px), 70rem);
+  }
+}
+
+/* 1000px ish */
+@media only screen and (min-width: 65rem) {
+  .stadium-background {
+    background-size: clamp(45rem, calc(60vh + 100px), 500rem);
+  }
+  .parallax-container {
+    grid-column: content-start / content-end;
+  }
+  .zampa-background {
+    background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9)),
+      url("../img/zampa-road.png");
+  }
+}
