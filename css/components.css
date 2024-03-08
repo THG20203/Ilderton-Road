@@ -18,7 +18,7 @@
   height: 100vh;
   overflow: hidden;
   display: grid;
-  grid-template-rows: 70vh min-max(30vh, min-content);
+  grid-template-rows: 70vh 30vh;
 }
 
 .zampa-background {
@@ -61,19 +61,52 @@
   grid-column: par-title-start / par-title-end;
   /* initially hide the title */
   opacity: 0;
+  z-index: 3;
 }
 
 .parallax-mouse {
   grid-column: par-mouse-start / par-mouse-end;
-  width: 10rem;
-  height: 12rem;
-  border-radius: 10px;
   border: white solid 2px;
   position: relative;
-  @media screen and (min-width: 500px) {
+  z-index: 3;
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 16px;
+
+  @media (min-width: 321px) and (max-width: 360px) {
+    width: 8.125rem;
+    height: 8.125rem;
+    border-radius: 17.25px;
+  }
+
+  @media (min-width: 361px) and (max-width: 375px) {
+    width: 8.75rem;
+    height: 8.75rem;
+    border-radius: 18.5px;
+  }
+
+  @media (min-width: 376px) and (max-width: 414px) {
+    width: 9.375rem;
+    height: 9.375rem;
+    border-radius: 19.75px;
+  }
+
+  @media (min-width: 415px) and (max-width: 768px) {
     width: 10rem;
-    height: 15rem;
-    border-radius: 25px;
+    height: 10rem;
+    border-radius: 20px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    width: 10.625rem;
+    height: 10.625rem;
+    border-radius: 21.25px;
+  }
+
+  @media (min-width: 1025px) {
+    width: 11.25rem;
+    height: 11.25rem;
+    border-radius: 22.5px;
   }
 }
 

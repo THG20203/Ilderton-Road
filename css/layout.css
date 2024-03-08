@@ -24,7 +24,6 @@ body {
 
 .home-container {
   display: grid;
-  grid-template-rows: 150rem 100vh;
   grid-template-columns:
     [full-start] 10vw [content-start] minmax(4rem, 1fr) [center-start] repeat(
       8,
