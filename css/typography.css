@@ -25,19 +25,18 @@
   }
 
   @media (min-width: 1367px) and (max-width: 1920px) {
-    font-size: 9rem;
-  }
-
-  @media (min-width: 1920px) and (max-width: 2560px) {
     font-size: 10rem;
   }
 
-  @media (min-width: 2561px) and (max-width: 3440px) {
-    font-size: 11rem;
+  @media (min-width: 1920px) and (max-width: 2560px) {
+    font-size: 12rem;
   }
 
+  @media (min-width: 2561px) and (max-width: 3440px) {
+    font-size: 14rem;
+  }
   @media (min-width: 3441px) {
-    font-size: 12rem;
+    font-size: 16rem;
   }
 }
 

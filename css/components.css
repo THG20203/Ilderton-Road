@@ -104,32 +104,32 @@
   }
 
   @media (min-width: 1025px) and (max-width: 1366px) {
-    width: 10rem;
-    height: 11rem;
+    width: 10.5rem;
+    height: 11.5rem;
     border-radius: 22.5px;
   }
 
   @media (min-width: 1367px) and (max-width: 1920px) {
-    width: 10.5rem;
-    height: 11.5rem;
+    width: 11.5rem;
+    height: 12.5rem;
     border-radius: 23.75px;
   }
 
   @media (min-width: 1920px) and (max-width: 2560px) {
-    width: 11rem;
-    height: 12rem;
+    width: 12.5rem;
+    height: 13.5rem;
     border-radius: 25px;
   }
 
   @media (min-width: 2561px) and (max-width: 3440px) {
-    width: 11.5rem;
-    height: 12.5rem;
+    width: 14.5rem;
+    height: 15.5rem;
     border-radius: 26.25px;
   }
 
   @media (min-width: 3441px) {
-    width: 12rem;
-    height: 13rem;
+    width: 16.5rem;
+    height: 17.5rem;
     border-radius: 27.5px;
   }
 }
