@@ -31,7 +31,7 @@
     grid-column: content-start / content-end;
   }
   .zampa-background {
-    background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9)),
+    background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
       url("../img/zampa-road.png");
   }
 }
