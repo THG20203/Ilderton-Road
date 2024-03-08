@@ -18,7 +18,14 @@
   height: 100vh;
   overflow: hidden;
   display: grid;
-  grid-template-rows: 70vh 30vh;
+  grid-template-rows: 60vh 30vh;
+  @media (min-width: 376px) and (max-width: 414px) {
+  }
+  @media (min-width: 415px) and (max-width: 768px) {
+  }
+  @media (min-width: 769px) {
+    grid-template-rows: 70vh 30vh;
+  }
 }
 
 .zampa-background {
@@ -27,7 +34,6 @@
   top: 0px;
   z-index: 1;
   width: 100%;
-  height: 70vh;
   /* initial transform properties */
   transform: scale3d(1, 1, 1);
   background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.9)),
@@ -35,18 +41,34 @@
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 60vh;
+  @media (min-width: 376px) and (max-width: 414px) {
+  }
+  @media (min-width: 415px) and (max-width: 768px) {
+  }
+  @media (min-width: 769px) {
+    height: 70vh;
+  }
 }
 
 .stadium-background {
   grid-row: 1 /2;
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   /* initial transform properties */
   transform: scale3d(1, 1, 1);
   background-image: url("../img/stadium-drawing.png");
   background-position: 50% 50%;
-  background-size: 80vh;
+  background-size: 70vh;
   background-repeat: no-repeat;
+  @media (min-width: 376px) and (max-width: 414px) {
+  }
+  @media (min-width: 415px) and (max-width: 768px) {
+  }
+  @media (min-width: 769px) {
+    background-size: 80vh;
+    height: 70vh;
+  }
 }
 
 .parallax-text {
@@ -70,54 +92,54 @@
   position: relative;
   z-index: 3;
   width: 6.5rem;
-  height: 7.5rem;
+  height: 7rem;
   border-radius: 16px;
 
   @media (min-width: 321px) and (max-width: 360px) {
-    width: 7.5rem;
-    height: 8.5rem;
+    width: 7rem;
+    height: 7.5rem;
     border-radius: 17.25px;
   }
 
   @media (min-width: 361px) and (max-width: 375px) {
-    width: 8rem;
-    height: 9rem;
+    width: 7.5rem;
+    height: 8rem;
     border-radius: 18.5px;
   }
 
   @media (min-width: 376px) and (max-width: 414px) {
-    width: 8.5rem;
+    width: 8rem;
     height: 9.5rem;
     border-radius: 19.75px;
   }
 
   @media (min-width: 415px) and (max-width: 768px) {
-    width: 9rem;
-    height: 10rem;
+    width: 8.5rem;
+    height: 9rem;
     border-radius: 20px;
   }
 
   @media (min-width: 769px) and (max-width: 1024px) {
-    width: 9.5rem;
-    height: 10.5rem;
+    width: 9rem;
+    height: 9.5rem;
     border-radius: 21.25px;
   }
 
   @media (min-width: 1025px) and (max-width: 1366px) {
-    width: 10.5rem;
-    height: 11.5rem;
+    width: 10rem;
+    height: 10.5rem;
     border-radius: 22.5px;
   }
 
   @media (min-width: 1367px) and (max-width: 1920px) {
-    width: 11.5rem;
-    height: 12.5rem;
+    width: 10.5rem;
+    height: 11rem;
     border-radius: 23.75px;
   }
 
   @media (min-width: 1920px) and (max-width: 2560px) {
-    width: 12.5rem;
-    height: 13.5rem;
+    width: 11.5rem;
+    height: 12rem;
     border-radius: 25px;
   }
 
