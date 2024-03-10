@@ -50,6 +50,7 @@
   grid-template-columns: [par-title-start] min-content [par-title-end] 1fr [par-mouse-start] min-content [par-mouse-end];
   grid-template-rows: 1fr;
   margin: 0 0.5rem;
+  place-items: center;
 }
 
 .parallax-title {
@@ -67,7 +68,6 @@
   width: 6rem;
   height: 8rem;
   border-radius: 16px;
-  align-self: center;
 }
 .parallax-mouse__slider {
   position: absolute;

@@ -18,6 +18,12 @@
   .parallax-text {
     margin: 0 2rem;
   }
+  .parallax-title {
+    font-size: 6rem;
+  }
+  .paragraph-text {
+    font-size: 2.5rem;
+  }
 }
 
 @media only screen and (min-width: 50rem) {
@@ -34,6 +40,12 @@
   .parallax-text {
     margin: 0 3rem;
   }
+  .parallax-title {
+    font-size: 7rem;
+  }
+  .paragraph-text {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (min-width: 65rem) {
@@ -44,9 +56,21 @@
     background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
       url("../img/zampa-road.png");
   }
+  .parallax-title {
+    font-size: 8rem;
+  }
+  .paragraph-text {
+    font-size: 3.5rem;
+  }
 }
 @media only screen and (min-width: 140rem) {
   .stadium-background {
     background-size: clamp(80rem, calc(80vh + 100px), 100rem);
+  }
+  .parallax-title {
+    font-size: 9rem;
+  }
+  .paragraph-text {
+    font-size: 4rem;
   }
 }
