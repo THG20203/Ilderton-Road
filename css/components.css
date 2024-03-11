@@ -93,7 +93,12 @@
 }
 
 .se-postcode__button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
 }
 
 .se-postcode__image {
+  width: 30rem;
 }
