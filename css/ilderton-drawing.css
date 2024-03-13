@@ -4,11 +4,20 @@
   margin: 0 0.5rem;
 }
 
+.drawing-click__content {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  height: 100%;
+}
+
 .se-postcode__button {
   border: none;
   background: none;
   padding: 0;
   cursor: pointer;
+  grid-column: 2 /3;
+  grid-row: 2 /3;
 }
 
 .se-postcode__image {
