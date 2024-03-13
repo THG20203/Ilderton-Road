@@ -54,3 +54,9 @@
   position: absolute;
   background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));
 }
+
+.tube-lighting {
+  width: 100rem;
+  height: 100rem;
+  filter: drop-shadow(0 1vw 1vw #fff);
+}
