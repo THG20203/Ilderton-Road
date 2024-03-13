@@ -26,8 +26,8 @@ window.addEventListener("scroll", () => {
     const screenWidth = window.innerWidth;
     element.style.transition = "opacity 0.5s ease";
     if (screenWidth >= 400) {
-      /* if scale is greater or equal  than 1.3 opacity 0 if not reached that yet -> 1 */
-      element.style.opacity = scale >= 1.3 ? 0 : 1;
+      /* if scale is greater or equal  than 1.4 opacity 0 if not reached that yet -> 1 */
+      element.style.opacity = scale >= 1.4 ? 0 : 1;
     } else {
       window.addEventListener("scroll", () => {
         const scrollPosition = window.scrollY;

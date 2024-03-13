@@ -101,4 +101,9 @@
 
 .se-postcode__image {
   width: 30rem;
+  transition: all 0.5s;
+}
+
+.se-postcode__image:hover {
+  transform: scale(1.1);
 }
