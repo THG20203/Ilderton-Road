@@ -64,6 +64,7 @@
   }
   .drawing-click__container {
     grid-column: content-start / content-end;
+    margin: 0;
   }
 }
 @media only screen and (min-width: 140rem) {

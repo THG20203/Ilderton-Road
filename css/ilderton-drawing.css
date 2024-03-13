@@ -1,5 +1,7 @@
 /* Drawing Progression component styles */
 .drawing-click__container {
+  grid-column: full-start / full-end;
+  margin: 0 0.5rem;
 }
 
 .se-postcode__button {
