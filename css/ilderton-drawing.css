@@ -1,0 +1,19 @@
+/* Drawing Progression component styles */
+.drawing-click__container {
+}
+
+.se-postcode__button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.se-postcode__image {
+  width: 30rem;
+  transition: all 0.5s;
+}
+
+.se-postcode__image:hover {
+  transform: scale(1.1);
+}

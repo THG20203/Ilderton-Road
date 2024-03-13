@@ -80,30 +80,3 @@
   background-color: white;
   transition: top 0.5s ease;
 }
-
-.ilderton-road {
-  grid-column: content-start / content-end;
-  grid-row: 2 / 3;
-  width: 100%;
-  height: auto; /* Allow the image to scale proportionally */
-}
-
-/* Drawing Progression component styles */
-.drawing-click__container {
-}
-
-.se-postcode__button {
-  border: none;
-  background: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-.se-postcode__image {
-  width: 30rem;
-  transition: all 0.5s;
-}
-
-.se-postcode__image:hover {
-  transform: scale(1.1);
-}

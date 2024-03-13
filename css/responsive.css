@@ -62,6 +62,9 @@
   .paragraph-text {
     font-size: 3.5rem;
   }
+  .drawing-click__container {
+    grid-column: content-start / content-end;
+  }
 }
 @media only screen and (min-width: 140rem) {
   .stadium-background {
