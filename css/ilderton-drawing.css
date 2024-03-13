@@ -39,6 +39,18 @@
   overflow: hidden;
 }
 
+/* For img elements, overlays are always provided on the parent container */
+.bakerloo-image__container::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+}
+
 .tube-image {
   position: absolute;
   top: 0;
@@ -59,14 +71,13 @@
   overflow: hidden;
 }
 
-/* For img elements, overlays are always provided on the parent container */
-.bakerloo-image__container::after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  position: absolute;
-  background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7));
+@keyframes lightingBlink {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+  }
 }
