@@ -49,7 +49,7 @@
     background-size: clamp(90rem, calc(60vh + 100px), 130rem);
   }
   .zampa-background {
-    background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
+    background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
       url("../img/zampa-road.png");
   }
   .ilderton-text {

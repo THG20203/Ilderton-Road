@@ -44,7 +44,7 @@ window.addEventListener("scroll", () => {
     }
   };
 
-  const zampaScale = calculateScale(zampaScrollPosition, 600);
+  const zampaScale = calculateScale(zampaScrollPosition, 700);
   const stadiumScale = calculateScale(stadiumScrollPosition, 1000);
   applyTransform(zampaBackground, zampaScale);
   applyOpacity(zampaBackground, zampaScale);

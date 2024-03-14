@@ -17,7 +17,7 @@
   height: 50vh;
   /* initial transform properties */
   transform: scale3d(1, 1, 1);
-  background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
     url("../img/zampa-road-mobile.png");
   background-position: 50% 50%;
   background-size: cover;
