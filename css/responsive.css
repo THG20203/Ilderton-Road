@@ -77,7 +77,6 @@
   .drawing-click__container {
     grid-column: content-start / content-end;
     margin: 0;
-    grid-template-columns: repeat(2, 1fr);
   }
   .bakerloo-image__container {
     grid-column: 2 / 3;
@@ -94,6 +93,10 @@
     grid-row: 1 /2;
     background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
       url("../img/zampa-road.png");
+  }
+  .drawing-click__container {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content 100vh min-content 100vh;
   }
   .ilderton-title {
     font-size: 9rem;
