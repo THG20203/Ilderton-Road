@@ -3,10 +3,13 @@
   grid-column: full-start / full-end;
   margin: 0 0.5rem;
   display: grid;
-  grid-template-rows: 20vh repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: 20vh 80vh 60vh 20vh;
+  height: 100vh;
 }
 
 .ilderton-text {
+  grid-row: 1 /2;
   margin: 0 0.5rem;
   align-self: center;
   z-index: 3;
@@ -18,20 +21,11 @@
   z-index: 3;
 }
 
-.drawing-click__content {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  height: 100%;
-}
-
 .se-postcode__button {
   border: none;
   background: none;
   padding: 0;
   cursor: pointer;
-  grid-column: 2 /3;
-  grid-row: 2 /3;
 }
 
 .se-postcode__image {
@@ -44,6 +38,7 @@
 }
 
 .bakerloo-image__container {
+  grid-row: 3 /4;
   display: flex;
   justify-content: center;
   align-items: center;
