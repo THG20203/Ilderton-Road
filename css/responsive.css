@@ -5,8 +5,13 @@
 }
 
 @media only screen and (min-width: 27rem) {
+  .parallax-container {
+    height: 60vh;
+    grid-template-rows: 10vh 50vh;
+    grid-column: content-start / content-end;
+  }
   .stadium-background {
-    background-size: clamp(45rem, calc(45vw + 10px), 70rem);
+    background-size: clamp(50rem, calc(45vw + 10px), 70rem);
   }
   .drawing-click__container {
     grid-template-rows: 30vh repeat(2, 1fr);

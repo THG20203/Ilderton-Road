@@ -25,8 +25,12 @@ window.addEventListener("scroll", () => {
   const applyOpacity = (element, scale) => {
     const screenWidth = window.innerWidth;
     element.style.transition = "opacity 0.5s ease";
-    /* if scale is greater than 1 opacity 0 if not reached that yet -> 1 */
-    element.style.opacity = scale > 1 ? 0 : 1;
+    if (screenWidth > 300) {
+      /* if scale is greater than 1.4 opacity 0 if not reached that yet -> 1 */
+      element.style.opacity = scale >= 1.4 ? 0 : 1;
+    } else {
+      element.style.opacity = scale > 1 ? 0 : 1;
+    }
   };
 
   const zampaScale = calculateScale(zampaScrollPosition, 800);
