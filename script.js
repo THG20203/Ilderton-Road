@@ -1,8 +1,8 @@
 // ELEMENTS
 const zampaBackground = document.querySelector(".zampa-background");
 const stadiumDrawing = document.querySelector(".stadium-background");
-const parallaxTitle = document.querySelector(".parallax-title");
-const mouseSlider = document.querySelector(".parallax-mouse__slider");
+const ildertonTitle = document.querySelector(".ilderton-title");
+const mouseSlider = document.querySelector(".scrolling-mouse__slider");
 
 /* PARALLAX CODE */
 window.addEventListener("scroll", () => {
@@ -26,8 +26,8 @@ window.addEventListener("scroll", () => {
     const screenWidth = window.innerWidth;
     element.style.transition = "opacity 0.5s ease";
     if (screenWidth >= 400) {
-      /* if scale is greater or equal  than 1.1 opacity 0 if not reached that yet -> 1 */
-      element.style.opacity = scale >= 1.1 ? 0 : 1;
+      /* if scale is greater or equal  than 1.4 opacity 0 if not reached that yet -> 1 */
+      element.style.opacity = scale >= 1.4 ? 0 : 1;
     } else {
       window.addEventListener("scroll", () => {
         const scrollPosition = window.scrollY;
@@ -44,7 +44,7 @@ window.addEventListener("scroll", () => {
     }
   };
 
-  const zampaScale = calculateScale(zampaScrollPosition, 800);
+  const zampaScale = calculateScale(zampaScrollPosition, 600);
   const stadiumScale = calculateScale(stadiumScrollPosition, 1000);
   applyTransform(zampaBackground, zampaScale);
   applyOpacity(zampaBackground, zampaScale);
@@ -54,9 +54,9 @@ window.addEventListener("scroll", () => {
 
 /* PARALLAX TITLE FADE IN ANIMATION */
 window.addEventListener("load", () => {
-  parallaxTitle.style.transition = "opacity 2s ease-in";
+  ildertonTitle.style.transition = "opacity 2s ease-in";
   /* no need for conditional, load event has either happened or not */
-  parallaxTitle.style.opacity = 1;
+  ildertonTitle.style.opacity = 1;
 });
 
 /* MOUSE SCROLL ANIMATION */

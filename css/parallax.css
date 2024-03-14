@@ -1,19 +1,12 @@
 /* Parallax components styles */
 .parallax-container {
-  position: relative;
-  display: grid;
+  position: sticky;
+  top: 0px;
+  overflow: hidden;
   background-color: var(--background-black);
   grid-column: full-start / full-end;
   width: 100%;
-}
-
-.parallax-sticky {
-  position: sticky;
-  top: 0px;
-  width: 100%;
-  overflow: hidden;
-  display: grid;
-  grid-template-rows: 50vh 20vh;
+  height: 150vh;
 }
 
 .zampa-background {
@@ -22,7 +15,7 @@
   top: 0px;
   z-index: 1;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   /* initial transform properties */
   transform: scale3d(1, 1, 1);
   background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
@@ -33,50 +26,12 @@
 }
 
 .stadium-background {
-  grid-row: 1 /2;
   width: 100%;
   /* initial transform properties */
   transform: scale3d(1, 1, 1);
   background-image: url("../img/stadium-drawing.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  height: 50vh;
+  height: 100vh;
   background-size: 25rem;
-}
-
-.parallax-text {
-  grid-row: 2 /3;
-  display: grid;
-  grid-template-columns: [par-title-start] min-content [par-title-end] 1fr [par-mouse-start] min-content [par-mouse-end];
-  grid-template-rows: 1fr;
-  margin: 0 0.5rem;
-  place-items: center;
-}
-
-.parallax-title {
-  grid-column: par-title-start / par-title-end;
-  /* initially hide the title */
-  opacity: 0;
-  z-index: 3;
-}
-
-.parallax-mouse {
-  grid-column: par-mouse-start / par-mouse-end;
-  border: white solid 2px;
-  position: relative;
-  z-index: 3;
-  width: 6rem;
-  height: 8rem;
-  border-radius: 16px;
-}
-
-.parallax-mouse__slider {
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4px;
-  height: 20%;
-  background-color: white;
-  transition: top 0.5s ease;
 }

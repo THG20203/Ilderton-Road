@@ -5,20 +5,16 @@
 }
 
 @media only screen and (min-width: 27rem) {
-  .parallax-sticky {
-    grid-template-rows: 60vh 30vh;
-  }
-  .zampa-background {
-    height: 60vh;
-  }
   .stadium-background {
-    height: 60vh;
     background-size: clamp(55rem, calc(45vw + 10px), 65rem);
   }
-  .parallax-text {
+  .drawing-click__container {
+    grid-template-rows: 30vh repeat(2, 1fr);
+  }
+  .ilderton-text {
     margin: 0 3rem;
   }
-  .parallax-title {
+  .ilderton-title {
     font-size: 6rem;
   }
   .paragraph-text {
@@ -27,20 +23,13 @@
 }
 
 @media only screen and (min-width: 50rem) {
-  .parallax-sticky {
-    grid-template-rows: 70vh 30vh;
-  }
-  .zampa-background {
-    height: 70vh;
-  }
   .stadium-background {
-    height: 70vh;
     background-size: clamp(65rem, calc(50vw + 10px), 70rem);
   }
-  .parallax-text {
+  .ilderton-text {
     margin: 0 4rem;
   }
-  .parallax-title {
+  .ilderton-title {
     font-size: 7rem;
   }
   .paragraph-text {
@@ -50,16 +39,19 @@
 
 @media only screen and (min-width: 65rem) {
   .stadium-background {
+    background-size: clamp(65rem, calc(50vw + 10px), 70rem);
+  }
+  .stadium-background {
     background-size: clamp(45rem, calc(60vh + 100px), 80rem);
   }
   .zampa-background {
     background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
       url("../img/zampa-road.png");
   }
-  .parallax-text {
+  .ilderton-text {
     margin: 0 5rem;
   }
-  .parallax-title {
+  .ilderton-title {
     font-size: 8rem;
   }
   .paragraph-text {
@@ -80,10 +72,10 @@
   .stadium-background {
     background-size: clamp(80rem, calc(80vh + 100px), 100rem);
   }
-  .parallax-text {
+  .ilderton-text {
     margin: 0 6rem;
   }
-  .parallax-title {
+  .ilderton-title {
     font-size: 9rem;
   }
   .paragraph-text {
