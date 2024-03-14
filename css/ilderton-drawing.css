@@ -9,7 +9,7 @@
 .ilderton-text {
   display: grid;
   grid-template-columns: [par-title-start] min-content [par-title-end] 1fr [par-mouse-start] min-content [par-mouse-end];
-  grid-template-rows: 1fr;
+  grid-template-rows: min-content;
   margin: 0 0.5rem;
   place-items: center;
 }

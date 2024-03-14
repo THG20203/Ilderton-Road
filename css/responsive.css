@@ -11,9 +11,11 @@
   .stadium-background {
     background-size: clamp(55rem, calc(45vw + 10px), 65rem);
     height: 100vh;
+    top: 0;
   }
   .zampa-background {
     height: 100vh;
+    top: 0;
   }
   .drawing-click__container {
     grid-template-rows: 30vh repeat(2, 1fr);

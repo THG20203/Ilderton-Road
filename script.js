@@ -25,26 +25,11 @@ window.addEventListener("scroll", () => {
   const applyOpacity = (element, scale) => {
     const screenWidth = window.innerWidth;
     element.style.transition = "opacity 0.5s ease";
-    if (screenWidth >= 400) {
-      /* if scale is greater or equal  than 1.3 opacity 0 if not reached that yet -> 1 */
-      element.style.opacity = scale >= 1.3 ? 0 : 1;
-    } else {
-      window.addEventListener("scroll", () => {
-        const scrollPosition = window.scrollY;
-        /* maxScroll is calculating the maximum scroll position possible before reaching 
-        the bottom of the document. It does this by subtracting the height of the viewport 
-        from the total height of the document. */
-        const maxScroll = document.body.clientHeight - window.innerHeight;
-        /* scrollPosition / maxScroll: This calculates the proportion of how far down the 
-        user has scrolled relative to the total scrollable distance. It's essentially 
-        normalizing the scroll position value to a range between 0 and 1. */
-        const opacity = 1 - scrollPosition / maxScroll;
-        element.style.opacity = opacity;
-      });
-    }
+    /* if scale is greater than 1 opacity 0 if not reached that yet -> 1 */
+    element.style.opacity = scale > 1 ? 0 : 1;
   };
 
-  const zampaScale = calculateScale(zampaScrollPosition, 700);
+  const zampaScale = calculateScale(zampaScrollPosition, 800);
   const stadiumScale = calculateScale(stadiumScrollPosition, 1000);
   applyTransform(zampaBackground, zampaScale);
   applyOpacity(zampaBackground, zampaScale);

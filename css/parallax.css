@@ -6,12 +6,12 @@
   background-color: var(--background-black);
   grid-column: full-start / full-end;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
 }
 
 .zampa-background {
   position: absolute;
-  top: 0px;
+  top: 25%;
   z-index: 1;
   width: 100%;
   height: 50vh;
@@ -25,6 +25,8 @@
 }
 
 .stadium-background {
+  position: absolute;
+  top: 25%;
   width: 100%;
   /* initial transform properties */
   transform: scale3d(1, 1, 1);
