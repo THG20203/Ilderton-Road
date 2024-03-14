@@ -54,10 +54,6 @@
   .stadium-background {
     background-size: clamp(80rem, calc(60vh + 100px), 90rem);
   }
-
-  .ilderton-text {
-    margin: 0 5rem;
-  }
   .ilderton-title {
     font-size: 8rem;
   }
@@ -88,9 +84,6 @@
     grid-row: 1 /2;
     background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
       url("../img/zampa-road.png");
-  }
-  .ilderton-text {
-    margin: 0 6rem;
   }
   .ilderton-title {
     font-size: 9rem;

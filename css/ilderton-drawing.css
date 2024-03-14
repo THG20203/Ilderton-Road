@@ -7,11 +7,9 @@
 }
 
 .ilderton-text {
-  display: grid;
-  grid-template-columns: [par-title-start] min-content [par-title-end] 1fr [par-mouse-start] min-content [par-mouse-end];
-  grid-template-rows: min-content;
   margin: 0 0.5rem;
   place-items: center;
+  z-index: 3;
 }
 
 .ilderton-title {
@@ -87,7 +85,7 @@
     transform: translateX(1px) rotate(-1deg);
   }
   75% {
-    transform: translateX(-1px) rotate(1deg);
+    transform: translateX(-2px) rotate(2deg);
   }
   100% {
     transform: translateX(0);
