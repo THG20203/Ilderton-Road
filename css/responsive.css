@@ -5,8 +5,15 @@
 }
 
 @media only screen and (min-width: 27rem) {
+  .parallax-container {
+    height: 150vh;
+  }
   .stadium-background {
     background-size: clamp(55rem, calc(45vw + 10px), 65rem);
+    height: 100vh;
+  }
+  .zampa-background {
+    height: 100vh;
   }
   .drawing-click__container {
     grid-template-rows: 30vh repeat(2, 1fr);
@@ -39,10 +46,7 @@
 
 @media only screen and (min-width: 65rem) {
   .stadium-background {
-    background-size: clamp(65rem, calc(50vw + 10px), 70rem);
-  }
-  .stadium-background {
-    background-size: clamp(45rem, calc(60vh + 100px), 80rem);
+    background-size: clamp(90rem, calc(60vh + 100px), 130rem);
   }
   .zampa-background {
     background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
