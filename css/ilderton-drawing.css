@@ -4,7 +4,7 @@
   margin: 0 0.5rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20vh 80vh 60vh 20vh;
+  grid-template-rows: 20vh 80vh 30vh 20vh;
   height: 100vh;
 }
 
@@ -115,4 +115,10 @@
     /* to make it flicker. (turning drop-shadow on and off) */
     filter: none;
   }
+}
+
+.tube-map__container {
+  background-color: var(--font-white);
+  grid-row: 4 / 5;
+  z-index: 2;
 }
