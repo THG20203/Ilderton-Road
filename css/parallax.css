@@ -6,12 +6,38 @@
   background-color: var(--background-black);
   grid-column: full-start / full-end;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
+  display: grid;
+  grid-template-rows: 20vh 50vh;
+}
+
+.scrolling-mouse {
+  border: white solid 2px;
+  position: relative;
+  z-index: 3;
+  width: 6rem;
+  height: 8rem;
+  border-radius: 16px;
+  display: flex;
+  justify-self: center;
+  align-self: start;
+  margin-top: 2rem;
+}
+
+.scrolling-mouse__slider {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 20%;
+  background-color: white;
+  transition: top 0.5s ease;
 }
 
 .zampa-background {
+  grid-row: 2 /3;
   position: absolute;
-  top: 25%;
   z-index: 1;
   width: 100%;
   height: 50vh;
@@ -25,8 +51,8 @@
 }
 
 .stadium-background {
+  grid-row: 2 /3;
   position: absolute;
-  top: 25%;
   width: 100%;
   /* initial transform properties */
   transform: scale3d(1, 1, 1);

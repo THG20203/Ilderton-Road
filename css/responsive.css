@@ -1,21 +1,12 @@
 @media only screen and (min-width: 20rem) {
   .stadium-background {
-    background-size: clamp(30rem, calc(40vw + 10px), 50rem);
+    background-size: clamp(30rem, calc(35vw + 10px), 40rem);
   }
 }
 
 @media only screen and (min-width: 27rem) {
-  .parallax-container {
-    height: 150vh;
-  }
   .stadium-background {
-    background-size: clamp(55rem, calc(45vw + 10px), 65rem);
-    height: 100vh;
-    top: 0;
-  }
-  .zampa-background {
-    height: 100vh;
-    top: 0;
+    background-size: clamp(45rem, calc(45vw + 10px), 70rem);
   }
   .drawing-click__container {
     grid-template-rows: 30vh repeat(2, 1fr);
@@ -30,10 +21,18 @@
     font-size: 2.5rem;
   }
 }
-
-@media only screen and (min-width: 50rem) {
+@media only screen and (min-width: 70rem) {
+  .parallax-container {
+    height: 150vh;
+  }
   .stadium-background {
-    background-size: clamp(65rem, calc(50vw + 10px), 70rem);
+    background-size: clamp(70rem, calc(50vw + 100px), 80rem);
+    height: 100vh;
+    top: 0;
+  }
+  .zampa-background {
+    height: 100vh;
+    top: 0;
   }
   .ilderton-text {
     margin: 0 4rem;
@@ -48,12 +47,9 @@
 
 @media only screen and (min-width: 65rem) {
   .stadium-background {
-    background-size: clamp(90rem, calc(60vh + 100px), 130rem);
+    background-size: clamp(80rem, calc(60vh + 100px), 90rem);
   }
-  .zampa-background {
-    background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
-      url("../img/zampa-road.png");
-  }
+
   .ilderton-text {
     margin: 0 5rem;
   }
@@ -74,9 +70,19 @@
     height: 100%;
   }
 }
-@media only screen and (min-width: 140rem) {
+@media only screen and (min-width: 100rem) {
+  .parallax-container {
+    display: grid;
+    grid-template-rows: 100vh;
+  }
   .stadium-background {
-    background-size: clamp(80rem, calc(80vh + 100px), 100rem);
+    grid-row: 1 /2;
+    background-size: clamp(80rem, calc(75vh + 200px), 100rem);
+  }
+  .zampa-background {
+    grid-row: 1 /2;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
+      url("../img/zampa-road.png");
   }
   .ilderton-text {
     margin: 0 6rem;
@@ -86,5 +92,10 @@
   }
   .paragraph-text {
     font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 140rem) {
+  .stadium-background {
+    background-size: clamp(100rem, calc(90vh + 300px), 300rem);
   }
 }

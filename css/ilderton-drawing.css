@@ -21,27 +21,6 @@
   z-index: 3;
 }
 
-.scrolling-mouse {
-  grid-column: par-mouse-start / par-mouse-end;
-  border: white solid 2px;
-  position: relative;
-  z-index: 3;
-  width: 6rem;
-  height: 8rem;
-  border-radius: 16px;
-}
-
-.scrolling-mouse__slider {
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 4px;
-  height: 20%;
-  background-color: white;
-  transition: top 0.5s ease;
-}
-
 .drawing-click__content {
   display: grid;
   grid-template-columns: 50% 50%;
