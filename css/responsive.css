@@ -8,7 +8,6 @@
   .parallax-container {
     height: 60vh;
     grid-template-rows: 10vh 50vh;
-    grid-column: content-start / content-end;
   }
   .stadium-background {
     background-size: clamp(50rem, calc(45vw + 10px), 70rem);
@@ -26,17 +25,18 @@
     font-size: 2.5rem;
   }
 }
-@media only screen and (min-width: 70rem) {
+@media only screen and (min-width: 50rem) {
   .parallax-container {
-    height: 150vh;
+    height: 80vh;
+    grid-template-rows: 10vh 70vh;
   }
   .stadium-background {
     background-size: clamp(70rem, calc(50vw + 100px), 80rem);
-    height: 100vh;
+    height: 70vh;
     top: 0;
   }
   .zampa-background {
-    height: 100vh;
+    height: 70vh;
     top: 0;
   }
   .ilderton-text {
@@ -50,9 +50,23 @@
   }
 }
 
-@media only screen and (min-width: 65rem) {
+@media only screen and (min-width: 70rem) {
+  .parallax-container {
+    grid-template-rows: 10vh 100vh;
+    grid-column: content-start / content-end;
+    height: 150vh;
+  }
   .stadium-background {
     background-size: clamp(80rem, calc(60vh + 100px), 90rem);
+    height: 100vh;
+    top: 0;
+  }
+  .zampa-background {
+    height: 100vh;
+    top: 0;
+  }
+  .ilderton-text {
+    margin: 0;
   }
   .ilderton-title {
     font-size: 8rem;
@@ -72,10 +86,6 @@
   }
 }
 @media only screen and (min-width: 100rem) {
-  .parallax-container {
-    display: grid;
-    grid-template-rows: 100vh;
-  }
   .stadium-background {
     grid-row: 1 /2;
     background-size: clamp(80rem, calc(75vh + 200px), 100rem);

@@ -13,7 +13,6 @@
 }
 
 .ilderton-title {
-  grid-column: par-title-start / par-title-end;
   /* initially hide the title */
   opacity: 0;
   z-index: 3;
