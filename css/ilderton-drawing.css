@@ -135,6 +135,14 @@
   width: 100vw;
 }
 
+.jubilee-line {
+  height: 1rem;
+  background-color: var(--jubilee-grey);
+  grid-row: 3 / 4;
+  grid-column: 1 / -1;
+  z-index: 3;
+}
+
 .tube-map__disabled {
   width: 3rem;
   height: auto;

@@ -10,7 +10,7 @@
 
 .tube-map__text {
   font-size: 1.5rem;
-  line-height: 1.6;
+  line-height: 1.2;
   font-family: var(--tube-font);
   color: var(--tubefont-color);
 }
