@@ -3,7 +3,7 @@
   grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20vh 80vh 20vh 50vh 20vh;
+  grid-template-rows: 10vh 80vh 20vh 50vh 20vh;
   height: 100vh;
 }
 
@@ -12,6 +12,7 @@
   margin: 0 0.5rem;
   align-self: center;
   z-index: 2;
+  text-align: center;
 }
 
 .ilderton-title {
@@ -39,6 +40,7 @@
   grid-row: 3 / 4;
   z-index: 2;
   margin: 0 0.5rem;
+  align-self: center;
 }
 
 .bakerloo-image__content {

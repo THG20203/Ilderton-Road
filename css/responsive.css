@@ -16,16 +16,16 @@
     margin: 0 3rem;
   }
   .ilderton-title {
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .drawing-click__container {
-    grid-template-rows: 20vh 80vh 40vh 20vh;
+    grid-template-rows: 10vh 80vh 40vh 20vh;
   }
   .ilderton-text__content {
     margin: 0 3rem;
   }
   .paragraph-text {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 @media only screen and (min-width: 50rem) {
@@ -46,16 +46,16 @@
     margin: 0 4rem;
   }
   .ilderton-title {
-    font-size: 7rem;
+    font-size: 6rem;
   }
   .ilderton-drawing__container {
-    grid-template-rows: 20vh 80vh 20vh 60vh 20vh;
+    grid-template-rows: 10vh 80vh 20vh 60vh 20vh;
   }
   .ilderton-text__content {
     margin: 0 4rem;
   }
   .paragraph-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -75,18 +75,19 @@
     top: 0;
   }
   .ilderton-title__content {
+    text-align: left;
     margin: 0;
   }
   .ilderton-title {
-    font-size: 8rem;
+    font-size: 7rem;
   }
   .paragraph-text {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .ilderton-drawing__container {
     grid-column: content-start / content-end;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20vh 55vh 25vh;
+    grid-template-rows: 10vh 65vh 25vh;
   }
   .ilderton-text__content {
     margin: 0;
@@ -113,10 +114,10 @@
       url("../img/zampa-road.png");
   }
   .ilderton-title {
-    font-size: 9rem;
+    font-size: 8rem;
   }
   .paragraph-text {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 @media only screen and (min-width: 140rem) {
