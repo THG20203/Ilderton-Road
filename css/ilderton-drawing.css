@@ -138,18 +138,39 @@
 .jubilee-line {
   height: 1rem;
   background-color: var(--jubilee-grey);
-  grid-row: 3 / 4;
+  grid-row: 4 / 5;
   grid-column: 1 / -1;
   z-index: 3;
 }
 
-.tube-map__disabled {
-  width: 3rem;
-  height: auto;
+.overground-line {
+  width: 1rem;
+  grid-row: 1 / -1;
+  grid-column: 9 / 10;
+  z-index: 2;
+  background-color: white;
+  border: 0.3rem solid orange;
+  border-top: 0;
+  border-bottom: 0;
 }
 
-.tube-map__boat {
-  width: 4.5rem;
+#bermondsey__disabled {
+  grid-row: 4 / 5;
+  grid-column: 3 / 4;
+  z-index: 4;
+  margin-top: -1rem;
+}
+
+#bermondsey__station--name {
+  grid-row: 4 / 5;
+  grid-column: 3 / 4;
+  z-index: 4;
+  margin-top: 2rem;
+  margin-left: -2rem;
+}
+
+.tube-map__disabled {
+  width: 3rem;
   height: auto;
 }
 
