@@ -1,10 +1,9 @@
 /* Drawing Progression component styles */
 .drawing-click__container {
   grid-column: full-start / full-end;
-  margin: 0 0.5rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20vh 80vh 30vh 20vh;
+  grid-template-rows: 20vh 80vh 50vh 20vh;
   height: 100vh;
 }
 
@@ -121,6 +120,11 @@
   background-color: var(--font-white);
   grid-row: 4 / 5;
   z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  height: 100%;
+  width: 100vw;
 }
 
 .tube-map__disabled {
