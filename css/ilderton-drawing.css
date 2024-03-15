@@ -3,21 +3,20 @@
   grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 20vh 80vh 50vh 20vh;
+  grid-template-rows: 20vh 80vh 20vh 50vh 20vh;
   height: 100vh;
 }
 
-.ilderton-text {
-  grid-row: 1 /2;
+.ilderton-title__content {
+  grid-row: 1 / 2;
   margin: 0 0.5rem;
   align-self: center;
-  z-index: 3;
+  z-index: 2;
 }
 
 .ilderton-title {
   /* initially hide the title */
   opacity: 0;
-  z-index: 3;
 }
 
 .se-postcode__button {
@@ -36,8 +35,14 @@
   transform: scale(1.1);
 }
 
+.ilderton-text__content {
+  grid-row: 3 / 4;
+  z-index: 2;
+  margin: 0 0.5rem;
+}
+
 .bakerloo-image__content {
-  grid-row: 3 /4;
+  grid-row: 4 / 5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,6 +70,7 @@
   width: 100%;
   animation: tubeMoving 1s ease-in-out infinite;
 }
+
 @keyframes tubeMoving {
   0% {
     transform: translateX(0);
@@ -118,7 +124,7 @@
 
 .tube-map__content {
   background-color: var(--font-white);
-  grid-row: 4 / 5;
+  grid-row: 5 / 6;
   z-index: 2;
   display: grid;
   grid-template-columns: repeat(10, 1fr);

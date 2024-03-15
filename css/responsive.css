@@ -12,7 +12,7 @@
   .stadium-background {
     background-size: clamp(50rem, calc(45vw + 10px), 70rem);
   }
-  .ilderton-text {
+  .ilderton-title__content {
     margin: 0 3rem;
   }
   .ilderton-title {
@@ -20,6 +20,9 @@
   }
   .drawing-click__container {
     grid-template-rows: 20vh 80vh 40vh 20vh;
+  }
+  .ilderton-text__content {
+    margin: 0 3rem;
   }
   .paragraph-text {
     font-size: 2.5rem;
@@ -39,14 +42,17 @@
     height: 70vh;
     top: 0;
   }
-  .ilderton-text {
+  .ilderton-title__content {
     margin: 0 4rem;
   }
   .ilderton-title {
     font-size: 7rem;
   }
   .ilderton-drawing__container {
-    grid-template-rows: 20vh 80vh 60vh 20vh;
+    grid-template-rows: 20vh 80vh 20vh 60vh 20vh;
+  }
+  .ilderton-text__content {
+    margin: 0 4rem;
   }
   .paragraph-text {
     font-size: 3rem;
@@ -68,7 +74,7 @@
     height: 100vh;
     top: 0;
   }
-  .ilderton-text {
+  .ilderton-title__content {
     margin: 0;
   }
   .ilderton-title {
@@ -82,9 +88,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 20vh 55vh 25vh;
   }
-  .ilderton-text {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+  .ilderton-text__content {
+    margin: 0;
   }
   .bakerloo-image__content {
     grid-column: 2 / 3;
