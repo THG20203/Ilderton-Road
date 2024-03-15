@@ -159,19 +159,20 @@
   background-color: var(--overground-orange);
   height: 0.5rem;
   width: 1rem;
-  grid-column: 9 / 10;
   z-index: 3;
   position: absolute;
+  right: 0.5rem;
+  top: 10%;
 }
 
 .overground-station--2 {
   background-color: var(--overground-orange);
   height: 0.5rem;
   width: 1rem;
-  grid-column: 9 / 10;
-  grid-row: 5 / 6;
   z-index: 3;
   position: absolute;
+  right: 0.5rem;
+  top: 80%;
 }
 
 #bermondsey__disabled {
@@ -186,6 +187,13 @@
   grid-column: 3 / 4;
   z-index: 4;
   margin-top: 2rem;
+  margin-left: -2rem;
+}
+
+#rotherhithe__station--name {
+  grid-row: 1 / 2;
+  grid-column: 8 / 9;
+  margin-top: 1.5rem;
   margin-left: -2rem;
 }
 
