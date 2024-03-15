@@ -149,9 +149,29 @@
   grid-column: 9 / 10;
   z-index: 2;
   background-color: white;
-  border: 0.3rem solid orange;
+  border: 0.3rem solid var(--overground-orange);
   border-top: 0;
   border-bottom: 0;
+  position: relative;
+}
+
+.overground-station--1 {
+  background-color: var(--overground-orange);
+  height: 0.5rem;
+  width: 1rem;
+  grid-column: 9 / 10;
+  z-index: 3;
+  position: absolute;
+}
+
+.overground-station--2 {
+  background-color: var(--overground-orange);
+  height: 0.5rem;
+  width: 1rem;
+  grid-column: 9 / 10;
+  grid-row: 5 / 6;
+  z-index: 3;
+  position: absolute;
 }
 
 #bermondsey__disabled {
