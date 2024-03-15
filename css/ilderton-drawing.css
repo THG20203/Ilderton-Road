@@ -36,7 +36,7 @@
   transform: scale(1.1);
 }
 
-.bakerloo-image__container {
+.bakerloo-image__content {
   grid-row: 3 /4;
   display: flex;
   justify-content: center;
@@ -46,7 +46,7 @@
 }
 
 /* For img elements, overlays are always provided on the parent container */
-.bakerloo-image__container::after {
+.bakerloo-image__content::after {
   content: "";
   height: 100%;
   width: 100%;
