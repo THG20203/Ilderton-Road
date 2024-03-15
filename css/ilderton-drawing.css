@@ -128,6 +128,11 @@
   height: auto;
 }
 
+.tube-map__boat {
+  width: 4.5rem;
+  height: auto;
+}
+
 .tube-map__br {
   width: 2rem;
   height: auto;
