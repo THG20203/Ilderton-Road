@@ -1,5 +1,5 @@
 /* Drawing Progression component styles */
-.drawing-click__container {
+.ilderton-drawing__container {
   grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: 1fr;
@@ -116,7 +116,7 @@
   }
 }
 
-.tube-map__container {
+.tube-map__content {
   background-color: var(--font-white);
   grid-row: 4 / 5;
   z-index: 2;
