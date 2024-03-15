@@ -7,3 +7,10 @@
   font-size: 2rem;
   line-height: 1.6;
 }
+
+.tube-map__text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-family: var(--tube-font);
+  color: var(--tubefont-color);
+}

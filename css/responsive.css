@@ -80,7 +80,7 @@
   .drawing-click__container {
     grid-column: content-start / content-end;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20vh 60vh 20vh;
+    grid-template-rows: 20vh 55vh 25vh;
   }
   .ilderton-text {
     grid-column: 1 / 2;
