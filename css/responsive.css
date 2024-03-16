@@ -35,9 +35,6 @@
   .drawing-click__container {
     grid-template-rows: 10vh 80vh 40vh 20vh;
   }
-  .ilderton-text__content {
-    margin: 0 3rem;
-  }
   .paragraph-text {
     font-size: 2rem;
   }
@@ -130,9 +127,6 @@
     grid-column: content-start / content-end;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10vh 65vh 25vh;
-  }
-  .ilderton-text__content {
-    margin: 0;
   }
   .bakerloo-image__content {
     grid-column: 2 / 3;

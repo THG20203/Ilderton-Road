@@ -26,6 +26,12 @@
   z-index: 2;
 }
 
+.bermondsey-drawing {
+  width: 20vw;
+  display: grid;
+  align-self: center;
+}
+
 .se-postcode__button {
   border: none;
   background: none;
@@ -40,13 +46,6 @@
 
 .se-postcode__image:hover {
   transform: scale(1.1);
-}
-
-.ilderton-text__content {
-  grid-row: 3 / 4;
-  z-index: 2;
-  margin: 0 0.5rem;
-  align-self: center;
 }
 
 .bakerloo-image__content {
