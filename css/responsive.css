@@ -4,7 +4,17 @@
   }
   #rotherhithe__station--name {
     margin-top: clamp(0.8rem, 1.1rem, 1.4rem);
-    margin-left: -4rem;
+    margin-left: -5rem;
+  }
+  .surrey-quays__content {
+    margin-left: 4rem;
+    margin-top: 0rem;
+  }
+  .tube-map__text {
+    font-size: 1.2rem;
+  }
+  #canada-water__station--name {
+    margin-left: -3rem;
   }
 }
 
@@ -40,7 +50,9 @@
   }
   #canada-water__station--name {
     margin-top: 2rem;
-    margin-left: 1rem;
+  }
+  .surrey-quays__content {
+    margin-left: clamp(2rem, 3rem, 4rem);
   }
 }
 @media only screen and (min-width: 50rem) {
@@ -77,7 +89,15 @@
   }
   #rotherhithe__station--name {
     margin-top: 2rem;
-    margin-left: 0.1rem;
+    margin-left: -2rem;
+  }
+  #canada-water__station--name {
+    margin-top: 2rem;
+    margin-left: -2rem;
+  }
+  .surrey-quays__content {
+    margin-top: 1rem;
+    margin-right: clamp(-5rem, -6rem, -7rem);
   }
 }
 
@@ -129,7 +149,7 @@
   }
   #rotherhithe__station--name {
     margin-top: 2rem;
-    margin-left: -3rem;
+    margin-left: -4rem;
   }
 }
 @media only screen and (min-width: 100rem) {
