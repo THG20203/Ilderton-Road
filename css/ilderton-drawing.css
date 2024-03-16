@@ -236,4 +236,7 @@
 .tube-map__br {
   width: 2rem;
   height: auto;
+  grid-row: 8 / 9;
+  grid-column: 7 / 8;
+  margin-left: 2rem;
 }
