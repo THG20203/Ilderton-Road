@@ -2,6 +2,10 @@
   .stadium-background {
     background-size: clamp(30rem, calc(35vw + 10px), 40rem);
   }
+  #rotherhithe__station--name {
+    margin-top: clamp(0.8rem, 1.1rem, 1.4rem);
+    margin-left: -2.5rem;
+  }
 }
 
 @media only screen and (min-width: 27rem) {
@@ -26,6 +30,13 @@
   }
   .paragraph-text {
     font-size: 2rem;
+  }
+  .tube-map__text {
+    font-size: 1.3rem;
+  }
+  #rotherhithe__station--name {
+    margin-top: 1.5rem;
+    margin-left: -2rem;
   }
 }
 @media only screen and (min-width: 50rem) {
@@ -56,6 +67,13 @@
   }
   .paragraph-text {
     font-size: 2.5rem;
+  }
+  .tube-map__text {
+    font-size: 1.4rem;
+  }
+  #rotherhithe__station--name {
+    margin-top: 2rem;
+    margin-left: 0.5rem;
   }
 }
 
@@ -102,6 +120,13 @@
     grid-row: 3 / 4;
     width: 100%;
   }
+  .tube-map__text {
+    font-size: 1.5rem;
+  }
+  #rotherhithe__station--name {
+    margin-top: 2rem;
+    margin-left: -3rem;
+  }
 }
 @media only screen and (min-width: 100rem) {
   .stadium-background {
@@ -118,6 +143,10 @@
   }
   .paragraph-text {
     font-size: 3.5rem;
+  }
+  #rotherhithe__station--name {
+    margin-top: 1.5rem;
+    margin-left: -2rem;
   }
 }
 @media only screen and (min-width: 140rem) {
