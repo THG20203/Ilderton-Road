@@ -3,7 +3,7 @@
   grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10vh 80vh 20vh 50vh 20vh;
+  grid-template-rows: 10vh 100vh 50vh 20vh;
   height: 100vh;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .bakerloo-image__content {
-  grid-row: 4 / 5;
+  grid-row: 3 / 4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,7 +131,7 @@
 
 .tube-map__content {
   background-color: var(--font-white);
-  grid-row: 5 / 6;
+  grid-row: 4 / 5;
   z-index: 2;
   display: grid;
   grid-template-columns: repeat(10, 1fr);

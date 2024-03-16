@@ -32,9 +32,6 @@
   .ilderton-title {
     font-size: 5rem;
   }
-  .drawing-click__container {
-    grid-template-rows: 10vh 80vh 40vh 20vh;
-  }
   .paragraph-text {
     font-size: 2rem;
   }
@@ -73,7 +70,7 @@
     font-size: 6rem;
   }
   .ilderton-drawing__container {
-    grid-template-rows: 10vh 80vh 20vh 60vh 20vh;
+    grid-template-rows: 10vh 100vh 60vh 20vh;
   }
   .ilderton-text__content {
     margin: 0 4rem;
