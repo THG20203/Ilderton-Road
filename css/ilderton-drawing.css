@@ -20,6 +20,12 @@
   opacity: 0;
 }
 
+.drawing-click__content {
+  grid-row: 2 / 3;
+  background-color: red;
+  z-index: 2;
+}
+
 .se-postcode__button {
   border: none;
   background: none;
@@ -225,7 +231,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: min-content;
   place-items: center;
-  grid-column-gap: 0.1rem;
+  grid-column-gap: 0.5rem;
   grid-column: 7 / 8;
   grid-row: 8 / 9;
   margin-top: -1rem;
