@@ -66,10 +66,11 @@ const mouseMoveUpDown = () => {
 setInterval(mouseMoveUpDown, 400);
 
 /* DRAWING CLICK THROUGH */
-let currentPostcodeImageIndex = 1;
+let currentPostCodeIndex = 1;
 
 postcodeButton.addEventListener("click", () => {
-  if (currentPostcodeImageIndex <= 4)
-    bermondseyDrawing.src = `./img/bermondsey-${currentPostcodeImageIndex}.png`;
-  currentPostcodeImageIndex++;
+  if (currentPostCodeIndex <= 4) {
+    bermondseyDrawing.src = `./img/bermondsey-${currentPostCodeIndex}.png`;
+    currentPostCodeIndex++;
+  }
 });
