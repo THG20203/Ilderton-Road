@@ -5,6 +5,7 @@ const ildertonTitle = document.querySelector(".ilderton-title");
 const mouseSlider = document.querySelector(".scrolling-mouse__slider");
 const postcodeButton = document.querySelector(".se-postcode__button");
 const bermondseyDrawing = document.querySelector(".bermondsey-drawing");
+const panels = document.querySelectorAll(".panel");
 
 /* PARALLAX CODE */
 window.addEventListener("scroll", () => {
@@ -76,4 +77,11 @@ postcodeButton.addEventListener("click", () => {
     currentPostCodeIndex = 1;
     bermondseyDrawing.src = `./img/bermondsey-${currentPostCodeIndex}.png`;
   }
+});
+
+/* PANELS FUNCTIONALITY */
+/* doesn't matter what word you pass in, going to show whatever we want to use
+for the iteration (the items retrieved for querySelectorAll) */
+panels.forEach((panel) => {
+  console.log(panel);
 });
