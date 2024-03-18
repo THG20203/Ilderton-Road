@@ -6,6 +6,11 @@ const mouseBody = document.querySelector(".scrolling-mouse");
 const postcodeButton = document.querySelector(".se-postcode__button");
 const bermondseyDrawing = document.querySelector(".bermondsey-drawing");
 const panels = document.querySelectorAll(".panel");
+const video = document.getElementById("video");
+const play = document.getElementById("play");
+const stop = document.getElementById("stop");
+const progress = document.getElementById("progress");
+const timestamp = document.getElementById("timestamp");
 
 /* PARALLAX CODE */
 window.addEventListener("scroll", () => {
