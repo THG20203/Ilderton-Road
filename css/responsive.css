@@ -108,7 +108,7 @@
   .parallax-container {
     grid-template-rows: 10vh 100vh;
     grid-column: content-start / content-end;
-    height: 150vh;
+    height: clamp(170vh, 170vh + 20px, 200vh);
   }
   .stadium-background {
     background-size: clamp(80rem, calc(60vh + 100px), 90rem);
