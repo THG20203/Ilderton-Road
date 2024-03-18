@@ -80,8 +80,20 @@ postcodeButton.addEventListener("click", () => {
 });
 
 /* PANELS FUNCTIONALITY */
+
 /* doesn't matter what word you pass in, going to show whatever we want to use
 for the iteration (the items retrieved for querySelectorAll) */
 panels.forEach((panel) => {
-  console.log(panel);
+  panel.addEventListener("click", () => {
+    /* First have to remove active class on other items */
+    removePanelActiveClasses();
+    /* to add a class on click? within click addEventListener, adding classList */
+    panel.classList.add("panel-active");
+  });
 });
+
+const removePanelActiveClasses = () => {
+  panels.forEach((panel) => {
+    panel.classList.remove("panel-active");
+  });
+};
