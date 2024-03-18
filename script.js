@@ -1,8 +1,10 @@
-// ELEMENTS
+// QUERY SELECTING ELEMENTS
 const zampaBackground = document.querySelector(".zampa-background");
 const stadiumDrawing = document.querySelector(".stadium-background");
 const ildertonTitle = document.querySelector(".ilderton-title");
 const mouseSlider = document.querySelector(".scrolling-mouse__slider");
+const postcodeButton = document.querySelector(".se-postcode__button");
+const bermondseyDrawing = document.querySelector(".bermondsey-drawing");
 
 /* PARALLAX CODE */
 window.addEventListener("scroll", () => {
@@ -62,3 +64,12 @@ const mouseMoveUpDown = () => {
 
 /* call moveUpDown function 400 miliseconds */
 setInterval(mouseMoveUpDown, 400);
+
+/* DRAWING CLICK THROUGH */
+let currentPostcodeImageIndex = 1;
+
+postcodeButton.addEventListener("click", () => {
+  if (currentPostcodeImageIndex <= 4)
+    bermondseyDrawing.src = `./img/bermondsey-${currentPostcodeImageIndex}.png`;
+  currentPostcodeImageIndex++;
+});
