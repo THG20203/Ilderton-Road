@@ -30,5 +30,5 @@ body {
       [col-start] minmax(min-content, 20rem) [col-end]
     )
     [center-end] minmax(4rem, 1fr) [content-end] 10vw [full-end];
-  grid-template-rows: min-content min-content min-content;
+  grid-template-rows: min-content min-content min-content min-content;
 }

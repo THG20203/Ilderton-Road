@@ -2,6 +2,7 @@
 const zampaBackground = document.querySelector(".zampa-background");
 const stadiumDrawing = document.querySelector(".stadium-background");
 const mouseSlider = document.querySelector(".scrolling-mouse__slider");
+const mouseBody = document.querySelector(".scrolling-mouse");
 const postcodeButton = document.querySelector(".se-postcode__button");
 const bermondseyDrawing = document.querySelector(".bermondsey-drawing");
 const panels = document.querySelectorAll(".panel");
@@ -57,6 +58,23 @@ const mouseMoveUpDown = () => {
 
 /* call moveUpDown function 400 miliseconds */
 setInterval(mouseMoveUpDown, 400);
+
+window.addEventListener("scroll", () => {
+  const viewportHeight = window.innerHeight;
+  const scrollPosition = window.scrollY;
+
+  /* Check if scroll position is beyond 100vh */
+  if (scrollPosition > viewportHeight) {
+    /* Reduce opacity of mouse slider */
+    mouseSlider.style.opacity = "0";
+    mouseBody.style.opacity = "0";
+  } else {
+    /* Restore opacity of mouse slider  (cause otherwise would 
+      go to 0 and not change) */
+    mouseSlider.style.opacity = "1";
+    mouseBody.style.opacity = "1";
+  }
+});
 
 /* DRAWING CLICK THROUGH */
 let currentPostCodeIndex = 1;

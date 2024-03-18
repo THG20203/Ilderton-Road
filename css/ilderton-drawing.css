@@ -5,19 +5,18 @@
   grid-template-columns: 1fr;
   grid-template-rows: 10vh 70vh 60vh 20vh;
   box-sizing: border-box;
+  z-index: 4;
 }
 
 .ilderton-title__content {
   grid-row: 1 / 2;
   margin: 0 0.5rem;
   align-self: center;
-  z-index: 3;
+  z-index: 4;
   text-align: center;
 }
 
 .ilderton-title {
-  /* initially hide the title */
-  opacity: 0;
   z-index: 3;
 }
 

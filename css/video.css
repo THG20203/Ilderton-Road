@@ -1,2 +1,49 @@
 .video__container {
+  height: 50vh;
+  overflow: hidden;
+  grid-column: content-start / 7;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.video-screen {
+  cursor: pointer;
+  height: 90%;
+}
+
+.controls {
+  color: var(--font-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 10%;
+}
+
+.controls .video-button {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.controls .fa-play {
+  color: var(--font-white);
+  padding: 0.5rem;
+}
+
+.controls .fa-stop {
+  color: var(--font-white);
+}
+
+.controls .fa-pause {
+  color: var(--font-white);
+}
+
+.controls .progress {
+  padding: 0.5rem;
 }
