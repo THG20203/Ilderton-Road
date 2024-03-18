@@ -72,7 +72,6 @@ postcodeButton.addEventListener("click", () => {
 });
 
 /* PANELS FUNCTIONALITY */
-
 /* doesn't matter what word you pass in, going to show whatever we want to use
 for the iteration (the items retrieved for querySelectorAll) */
 panels.forEach((panel) => {
