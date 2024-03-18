@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ilderton Road</title>
+    <!-- Font awesome -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
     <!-- Section css files -->
     <link rel="stylesheet" href="./css/parallax.css" />
     <link rel="stylesheet" href="./css/ilderton-drawing.css" />
@@ -111,8 +118,35 @@
           </div>
         </div>
       </section>
+
       <!-- Video Section-->
-      <section class="video__container"></section>
+      <section class="video__container">
+        <video
+          src="videos/video.mp4"
+          id="video"
+          class="video-screen"
+          poster="img/poster.png"
+        ></video>
+        <div class="controls">
+          <button class="video-button" id="play">
+            <i class="fa fa-play fa-2x"></i>
+          </button>
+          <button class="video-button" id="stop">
+            <i class="fa fa-stop fa-2x"></i>
+          </button>
+          <input
+            type="range"
+            id="progress"
+            class="progress"
+            min="0"
+            max="100"
+            step="0.1"
+            value="0"
+          />
+          <span class="timestamp" id="timestamp">00:00</span>
+        </div>
+      </section>
+
       <!-- Expanding Cards Section -->
       <section class="expanding-cards__container">
         <div class="panel panel-active expanding-card__1">
