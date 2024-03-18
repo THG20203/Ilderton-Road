@@ -177,6 +177,9 @@
     margin-top: clamp(1rem, 1.5rem, 2rem);
     margin-left: -2rem;
   }
+  .bermondsey-drawing {
+    height: 55rem;
+  }
 }
 @media only screen and (min-width: 140rem) {
   .stadium-background {
