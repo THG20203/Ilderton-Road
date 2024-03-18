@@ -5,12 +5,12 @@ const mouseSlider = document.querySelector(".scrolling-mouse__slider");
 const mouseBody = document.querySelector(".scrolling-mouse");
 const postcodeButton = document.querySelector(".se-postcode__button");
 const bermondseyDrawing = document.querySelector(".bermondsey-drawing");
-const panels = document.querySelectorAll(".panel");
 const video = document.getElementById("video");
 const play = document.getElementById("play");
 const stop = document.getElementById("stop");
 const progress = document.getElementById("progress");
 const timestamp = document.getElementById("timestamp");
+const panels = document.querySelectorAll(".panel");
 
 /* PARALLAX CODE */
 window.addEventListener("scroll", () => {
@@ -93,6 +93,18 @@ postcodeButton.addEventListener("click", () => {
     bermondseyDrawing.src = `./img/bermondsey-${currentPostCodeIndex}.png`;
   }
 });
+
+/* VIDEO PLAYER FUNCTIONALITY */
+video.addEventListener("click", toggleVideoStatus);
+video.addEventListener("pause", updatePlayIcon);
+video.addEventListener("play", updatePlayIcon);
+/* timeupdate event is triggered repeatedly as the 
+video plays. It is fired whenever the currentTime property of the video element changes. */
+video.addEventListener("timeupdate", updateProgress);
+
+play.addEventListener("click", toggleVideoStatus);
+stop.addEventListener("click", stopVideo);
+progress.addEventListener("change", setVideoProgress);
 
 /* PANELS FUNCTIONALITY */
 /* doesn't matter what word you pass in, going to show whatever we want to use
