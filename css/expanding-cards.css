@@ -1,6 +1,6 @@
 .expanding-cards__container {
-  height: 20vh;
+  height: 50vh;
   background-color: red;
-  grid-column: content-start / content-end;
+  grid-column: 7 / content-end;
   z-index: 2;
 }
