@@ -72,5 +72,8 @@ postcodeButton.addEventListener("click", () => {
   if (currentPostCodeIndex <= 4) {
     bermondseyDrawing.src = `./img/bermondsey-${currentPostCodeIndex}.png`;
     currentPostCodeIndex++;
+  } else {
+    currentPostCodeIndex = 1;
+    bermondseyDrawing.src = `./img/bermondsey-${currentPostCodeIndex}.png`;
   }
 });
