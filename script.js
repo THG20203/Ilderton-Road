@@ -1,7 +1,6 @@
 // QUERY SELECTING ELEMENTS
 const zampaBackground = document.querySelector(".zampa-background");
 const stadiumDrawing = document.querySelector(".stadium-background");
-const ildertonTitle = document.querySelector(".ilderton-title");
 const mouseSlider = document.querySelector(".scrolling-mouse__slider");
 const postcodeButton = document.querySelector(".se-postcode__button");
 const bermondseyDrawing = document.querySelector(".bermondsey-drawing");
@@ -42,13 +41,6 @@ window.addEventListener("scroll", () => {
   applyOpacity(zampaBackground, zampaScale);
   applyTransform(stadiumDrawing, stadiumScale);
   applyOpacity(stadiumDrawing, stadiumScale);
-});
-
-/* PARALLAX TITLE FADE IN ANIMATION */
-window.addEventListener("load", () => {
-  ildertonTitle.style.transition = "opacity 2s ease-in";
-  /* no need for conditional, load event has either happened or not */
-  ildertonTitle.style.opacity = 1;
 });
 
 /* MOUSE SCROLL ANIMATION */
