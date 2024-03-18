@@ -1,14 +1,12 @@
 .expanding-cards__container {
   height: 50vh;
-  grid-column: 7 / content-end;
+  grid-column: full-start / full-end;
   z-index: 2;
   display: flex;
   width: 100%;
 }
 
 .panel {
-  background-size: auto 100%;
-  background-repeat: no-repeat;
   height: 100%;
   z-index: 3;
   display: flex;
@@ -16,26 +14,30 @@
   justify-content: center;
   text-align: center;
   cursor: pointer;
-  flex: 0.5;
+  flex: 1;
   margin: 1rem;
   transition: flex 0.7s ease-in;
+  background-size: auto 100%;
 }
 
 .panel-active {
-  flex: 5;
+  flex: 3;
 }
 
 .expanding-card__1 {
   background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
     url("../img/panel-1.png");
+  background-repeat: no-repeat;
 }
 
 .expanding-card__2 {
   background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
     url("../img/panel-2.png");
+  background-repeat: no-repeat;
 }
 
 .expanding-card__3 {
   background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
     url("../img/panel-3.png");
+  background-repeat: no-repeat;
 }

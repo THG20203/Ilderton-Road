@@ -85,7 +85,8 @@ postcodeButton.addEventListener("click", () => {
 for the iteration (the items retrieved for querySelectorAll) */
 panels.forEach((panel) => {
   panel.addEventListener("click", () => {
-    /* First have to remove active class on other items */
+    /* First have to remove active class on other items, by calling the
+    removePanelActiveClass function with () */
     removePanelActiveClasses();
     /* to add a class on click? within click addEventListener, adding classList */
     panel.classList.add("panel-active");
@@ -93,6 +94,7 @@ panels.forEach((panel) => {
 });
 
 const removePanelActiveClasses = () => {
+  /* loop through the panels node list (selected from querySelectorAll) */
   panels.forEach((panel) => {
     panel.classList.remove("panel-active");
   });
