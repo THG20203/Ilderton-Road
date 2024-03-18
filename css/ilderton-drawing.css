@@ -3,33 +3,36 @@
   grid-column: full-start / full-end;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10vh 100vh 50vh 20vh;
-  height: 100vh;
+  grid-template-rows: 10vh 70vh 60vh 20vh;
+  box-sizing: border-box;
 }
 
 .ilderton-title__content {
   grid-row: 1 / 2;
   margin: 0 0.5rem;
   align-self: center;
-  z-index: 2;
+  z-index: 3;
   text-align: center;
 }
 
 .ilderton-title {
   /* initially hide the title */
   opacity: 0;
+  z-index: 3;
 }
 
 .drawing-click__content {
   grid-row: 2 / 3;
-  background-color: red;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 5rem;
 }
 
 .bermondsey-drawing {
-  height: 40rem;
-  display: grid;
-  align-self: center;
+  height: 25rem;
 }
 
 .se-postcode__button {
@@ -40,7 +43,7 @@
 }
 
 .se-postcode__image {
-  width: 30rem;
+  width: 25rem;
   transition: all 0.5s;
 }
 
@@ -137,7 +140,8 @@
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);
   height: 100%;
-  width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .jubilee-line {

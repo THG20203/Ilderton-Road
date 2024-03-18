@@ -16,6 +16,9 @@
   #canada-water__station--name {
     margin-left: -3rem;
   }
+  .bermondsey-drawing {
+    height: 30rem;
+  }
 }
 
 @media only screen and (min-width: 27rem) {
@@ -48,6 +51,9 @@
   .surrey-quays__content {
     margin-left: clamp(2rem, 3rem, 4rem);
   }
+  .bermondsey-drawing {
+    height: 40rem;
+  }
 }
 @media only screen and (min-width: 50rem) {
   .parallax-container {
@@ -69,9 +75,6 @@
   .ilderton-title {
     font-size: 6rem;
   }
-  .ilderton-drawing__container {
-    grid-template-rows: 10vh 100vh 60vh 20vh;
-  }
   .ilderton-text__content {
     margin: 0 4rem;
   }
@@ -92,6 +95,12 @@
   .surrey-quays__content {
     margin-top: 1rem;
     margin-right: clamp(-5rem, -6rem, -7rem);
+  }
+  .bermondsey-drawing {
+    height: 50rem;
+  }
+  .se-postcode__image {
+    width: 30rem;
   }
 }
 
@@ -121,6 +130,7 @@
     grid-column: content-start / content-end;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10vh 65vh 25vh;
+    height: 100vh;
   }
   .ilderton-title {
     font-size: 7rem;
@@ -175,5 +185,8 @@
   #rotherhithe__station--name {
     margin-top: clamp(2.5rem, 3rem, 3.5rem);
     margin-left: -1rem;
+  }
+  .bermondsey-drawing {
+    height: 60rem;
   }
 }
