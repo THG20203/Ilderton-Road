@@ -119,8 +119,10 @@ const updatePlayIcon = () => {
 
 /* Update the progress and timestamp */
 const updateProgress = () => {
-  /* remember progress is a range input so has a value */
-  progress.value;
+  /* remember progress is a range input so has a value - 
+  currentTime / duration * 100 means percentage is being produced
+  for the value bar. */
+  progress.value = (video.currentTime / video.duration) * 100;
 };
 
 const setVideoProgress = () => {
