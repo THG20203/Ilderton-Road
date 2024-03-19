@@ -123,10 +123,26 @@ const updateProgress = () => {
   currentTime / duration * 100 means percentage is being produced
   for the value bar. */
   progress.value = (video.currentTime / video.duration) * 100;
+  /* format timestamp */
+  /* Get minutes */
+  console.log(video.currentTime);
+  /* video.currentTime is in seconds so 60 / 60 = 1 minute */
+  let mins = Math.floor(video.currentTime / 60);
+  if (mins < 10) {
+    mins = "0" + String(mins);
+  }
+  /* Get seconds left on top of minutes */
+  let secs = Math.floor(video.currentTime % 60);
+  if (secs < 10) {
+    secs = "0" + String(secs);
+  }
+
+  timestamp.innerHTML = `${mins}:${secs}`;
 };
 
 const setVideoProgress = () => {
-  return true;
+  /* making sure progress is a value with + sign */
+  video.currentTime = (+progress.value * video.duration) / 100;
 };
 
 const stopVideo = () => {
