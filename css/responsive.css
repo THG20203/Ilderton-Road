@@ -162,6 +162,9 @@
   .expanding-cards__container {
     grid-column: 7 / content-end;
   }
+  .controls {
+    width: 50%;
+  }
 }
 @media only screen and (min-width: 100rem) {
   .stadium-background {
