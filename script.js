@@ -119,7 +119,8 @@ const updatePlayIcon = () => {
 
 /* Update the progress and timestamp */
 const updateProgress = () => {
-  return true;
+  /* remember progress is a range input so has a value */
+  progress.value;
 };
 
 const setVideoProgress = () => {
@@ -127,7 +128,9 @@ const setVideoProgress = () => {
 };
 
 const stopVideo = () => {
-  return true;
+  /* no stop method with API -> so set currentTime to 0, then pause */
+  video.currentTime = 0;
+  video.pause();
 };
 
 // VIDEO EVENT LISTENERS
