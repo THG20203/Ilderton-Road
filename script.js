@@ -98,8 +98,10 @@ postcodeButton.addEventListener("click", () => {
 /* Play and pause video */
 const toggleVideoStatus = () => {
   if (video.paused) {
+    /* if has been paused want to play */
     video.play();
   } else {
+    /* if is playing we want to pause */
     video.pause();
   }
 };
@@ -107,8 +109,10 @@ const toggleVideoStatus = () => {
 /* Update play/pause icon */
 const updatePlayIcon = () => {
   if (video.paused) {
+    /* if is paused want play icon */
     play.innerHTML = '<i class="fa fa-play fa-2x"></i>';
   } else {
+    /* if is playing want the pause icon */
     play.innerHTML = '<i class="fa fa-pause fa-2x"></i>';
   }
 };
