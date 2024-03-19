@@ -1,0 +1,9 @@
+.text__container {
+  height: 150vh;
+  grid-column: full-start / full-end;
+  z-index: 4;
+}
+
+.stadium__image {
+  height: 50vh;
+}

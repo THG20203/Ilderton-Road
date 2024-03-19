@@ -36,7 +36,7 @@
     font-size: 5rem;
   }
   .paragraph-text {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .tube-map__text {
     font-size: 1.3rem;
@@ -79,7 +79,7 @@
     margin: 0 4rem;
   }
   .paragraph-text {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .tube-map__text {
     font-size: 1.4rem;
@@ -124,7 +124,7 @@
     margin: 0;
   }
   .paragraph-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .ilderton-drawing__container {
     grid-column: content-start / content-end;
@@ -180,7 +180,7 @@
     font-size: 8rem;
   }
   .paragraph-text {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   #rotherhithe__station--name {
     margin-top: clamp(1rem, 1.5rem, 2rem);
