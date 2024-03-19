@@ -156,6 +156,9 @@
     margin-top: 2rem;
     margin-left: -4rem;
   }
+  .video__container {
+    grid-column: content-start / 7;
+  }
   .expanding-cards__container {
     grid-column: 7 / content-end;
   }
