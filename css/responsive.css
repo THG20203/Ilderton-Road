@@ -165,6 +165,11 @@
   .controls {
     width: 50%;
   }
+  .text-container {
+  }
+  .text-content {
+    width: 50rem;
+  }
 }
 @media only screen and (min-width: 100rem) {
   .stadium-background {
