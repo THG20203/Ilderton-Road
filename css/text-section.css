@@ -1,9 +1,12 @@
 .text__container {
-  height: 150vh;
   grid-column: full-start / full-end;
   z-index: 4;
+  display: flex;
+  flex-direction: column;
 }
 
 .stadium__image {
-  height: 50vh;
+  width: 50%;
+  height: auto;
+  margin: auto;
 }
