@@ -14,14 +14,14 @@
   justify-content: center;
   text-align: center;
   cursor: pointer;
-  flex: 1;
+  flex: 0.5;
   margin: 1rem;
   transition: flex 0.7s ease-in;
   background-size: auto 100%;
 }
 
 .panel-active {
-  flex: 3;
+  flex: 5;
 }
 
 .expanding-card__1 {

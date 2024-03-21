@@ -1,0 +1,9 @@
+.video-text__container {
+  grid-column: full-start / full-end;
+  z-index: 5;
+}
+
+.cards-text__container {
+  grid-column: full-start / full-end;
+  z-index: 5;
+}
