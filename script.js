@@ -82,6 +82,16 @@ window.addEventListener("scroll", () => {
 });
 
 /* DRAWING CLICK THROUGH */
+/* Declaring the currentPostCodeIndex variable outside of the event listener 
+has to do with the scope of the variable and how its value is maintained 
+across multiple event listener invocations.
+
+If the currentPostCodeIndex variable were declared inside the event listener 
+function, it would be reinitialized every time the event listener function 
+is called. This means that currentPostCodeIndex would always be set to 1 
+whenever the event listener is triggered, effectively resetting the count 
+every time the button is clicked. */
+
 let currentPostCodeIndex = 1;
 
 postcodeButton.addEventListener("click", () => {
